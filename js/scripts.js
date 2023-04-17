@@ -1,16 +1,8 @@
-/*!
- * Start Bootstrap - Bare v5.0.9 (https://startbootstrap.com/template/bare)
- * Copyright 2013-2023 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
- */
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
-
 $(document).ready(function () {
-  const navPath = getRelativePath();
+  // const navPath = getRelativePath();
 
   // Load the navigation bar into the navbar div
-  $("#navbar").load(`mini-web/${navPath}/navbar.html`);
+  $("#navbar").load(`/mini-web/common/navbar.html`);
 
   // Fix the navigation bar on scroll
   $(window).scroll(function () {
@@ -27,19 +19,19 @@ $(document).ready(function () {
   loadTheme();
 });
 
-const getRelativePath = () => {
-  const currentPath = window.location.pathname;
-  // console.log(currentPath);
-  const dirList = currentPath.split("/");
-  // console.log(dirList);
+// const getRelativePath = () => {
+//   const currentPath = window.location.pathname;
+//   // console.log(currentPath);
+//   const dirList = currentPath.split("/");
+//   // console.log(dirList);
 
-  let navPath = "common";
-  if (dirList.length === 3) {
-    navPath = "../" + navPath;
-  }
+//   let navPath = "common";
+//   if (dirList.length === 3) {
+//     navPath = "../" + navPath;
+//   }
 
-  return navPath;
-};
+//   return navPath;
+// };
 
 function activateNightMode() {
   const element = document.body;
