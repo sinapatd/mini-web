@@ -10,7 +10,7 @@ $(document).ready(function () {
   const navPath = getRelativePath();
 
   // Load the navigation bar into the navbar div
-  $("#navbar").load(`${navPath}/navbar.html`);
+  $("#navbar").load(`mini-web/${navPath}/navbar.html`);
 
   // Fix the navigation bar on scroll
   $(window).scroll(function () {
