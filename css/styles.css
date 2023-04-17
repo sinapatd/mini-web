@@ -486,10 +486,7 @@ progress {
   display: none !important;
 }
 
-.dark-mode {
-  background-color: #121212;
-  color: #EDEDED;
-}
+
 
 /* .btn-nav-bar {
   padding-top: 8px;
@@ -10836,4 +10833,9 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #EDEDED;
 }
